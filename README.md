@@ -27,4 +27,48 @@ To run this project locally, you need to have the following installed:
 
 1. **Clone the Repository** (or download the project files):
    ```bash
-   git clone <your-repository-url>
+   git clone (https://github.com/Adityamaurya790/GymManagement.git)
+   
+2. **Install XAMPP:
+
+    Download and install XAMPP from the official site.
+    Start the Apache and MySQL services via the XAMPP control panel.
+
+3. **Create a Database:
+
+    Open phpMyAdmin in your browser (usually at http://localhost/phpmyadmin).
+    Create a new database named gym_management.
+
+4. **Set Up the Database:
+
+    Import the SQL file (if provided) or create the necessary tables in the database.
+    Create a users table for admin login and a members table for storing member information.
+
+Example SQL for creating users table:
+
+CREATE TABLE users (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    username VARCHAR(50) NOT NULL,
+    password VARCHAR(255) NOT NULL
+);
+
+Example SQL for creating members table:
+
+CREATE TABLE members (
+    id INT PRIMARY KEY,
+    name VARCHAR(100) NOT NULL,
+    age INT NOT NULL,
+    membership_type VARCHAR(50) NOT NULL
+);
+
+5. **Configure Database Connection:
+
+    Open the login.php and other PHP files that handle database connections.
+    Ensure the servername, username, password, and dbname variables match your MySQL setup.
+
+6. **Access the Application:
+
+    Open your web browser and go to http://localhost/gym_management/login.php to start using the system.
+    Log in with the appropriate admin credentials (you can add a user in the users table in the database).
+
+Live Demo: You can also view the live version of the project at gym-project.wuaze.com.
