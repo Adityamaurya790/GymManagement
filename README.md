@@ -68,7 +68,7 @@ CREATE TABLE members (
 
 6. **Access the Application:
 
-    Open your web browser and go to http://localhost/gym_management/login.php to start using the system.
+    Open your web browser and go to http://localhost/gym_management/index.php to start using the system.
     Log in with the appropriate admin credentials (you can add a user in the users table in the database).
 
-Live Demo: You can also view the live version of the project at gym-project.wuaze.com.
+Live Demo: You can also view the live version of the project at http://gym-project.wuaze.com
